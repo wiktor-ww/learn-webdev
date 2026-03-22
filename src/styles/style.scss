@@ -1,0 +1,12 @@
+@use 'var/var' as *;
+@use 'nav';
+
+#ts{
+    display:flex;
+}
+
+body {
+    line-height: $defLine;
+    background-color: $defBg;
+    color: $defText;
+}
