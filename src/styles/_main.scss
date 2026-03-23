@@ -1,9 +1,10 @@
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
 a {
     color:inherit;
     text-decoration: inherit;
+}
+
+section {
+    display: flex;
+    height: 100dvh;
+    border: 2px solid red;
 }

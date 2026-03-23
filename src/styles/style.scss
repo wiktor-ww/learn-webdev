@@ -1,12 +1,23 @@
 @use 'var/var' as *;
 @use 'nav';
+@use 'main';
+@use 'sections/welcome';
 
 #ts{
     display:flex;
+    flex-direction: column;
+    gap:50px;
 }
 
 body {
     line-height: $defLine;
     background-color: $defBg;
     color: $defText;
+    font-family: verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: black;
+    color:white;
 }
