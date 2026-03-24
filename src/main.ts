@@ -17,3 +17,25 @@ const elementsToAnimate = document.querySelectorAll('.reveal');
 elementsToAnimate.forEach((el) => observer.observe(el));
 
 /* end observer */
+
+
+/* typewriter */
+
+function typeWriter(text: string, element: HTMLElement, speed = 50) {
+    let i = 0;
+
+    function typing() {
+        if (i < text.length) {
+            element.innerHTML += text[i];
+            i++;
+            setTimeout(typing, speed);
+        }
+    }
+
+    typing();
+}
+
+const el1 = document.getElementById("webDev")!;
+typeWriter("Web Development", el1, 110);
+
+/* end typewriter */
