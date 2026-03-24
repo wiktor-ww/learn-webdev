@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/style.scss" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>learn-webdev</title>
   </head>
   <body>
@@ -31,19 +32,100 @@
                         <h2 id="codes">html &#8226; web &#8226; dev</h2>
                         <h1>Web Development</h1>
                         <p>See how sites you visit are made</p>
+
                         <div id="content-1-btn">
-                            <button class="btn">Learn now!</button>
+                            <a href="#introduction">
+                                <button class="btn">Learn now!</button>
+                            </a>
                         </div>
                     </div>
-                    <div class="w-content-2">
+                    <div class="w-content-2 reveal" data-anim="fade-right">
                         <div id="welcome-img"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>W</section>
+        <section id="introduction">
+            <div class="introduction-content">
+                <div class="introduction-grid">
+                    <div class="i-content-1  reveal" data-anim="fade-left">
+                        <h1>What is it really..? </h1>
+
+                        <div class="i-text">
+                            <p>
+                                Web development is the process of designing, developing and maintaining websites and web apps. Web development encompasses several
+                                different fields, most commonly referring to the programming of websites. Front-end development is the act of developing the user
+                                interface and client-side code, while back-end development focuses on the infrastructure behind a website, mainly server-side code.
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="i-content-2 reveal" data-anim="fade-right">
+                        <div id="welcome-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="developers">
+            <div class="developers-content">
+                <div class="developers-grid">
+                    <div class="d-content-1 reveal" data-anim="fade-left">
+                        <h1>The Developers </h1>
+
+                        <div class="i-text">
+                            <ul>
+                                <li>
+                                    <strong>Frontend developers'</strong>, their task is to create the website and bring the
+                                    designers' design to life
+                                </li>
+
+                                <li>
+                                    <strong>The designers'</strong> task is to design the whole design of the website. They are doing one of the most important
+                                    job in the whole project (design is hard)
+                                </li>
+
+                                <li>
+                                    <strong>The backend developers'</strong> are the whole back scene and the whole skeleton of the website. They are responsible for
+                                    all databases and resources at the server-side.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="i-content-2 reveal" data-anim="fade-right">
+                        <div id="developers-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutus">
+            <div class="aboutus-content">
+                <div class="aboutus-grid">
+                    <div class="a-content-1 reveal" data-anim="fade-left">
+                        <h1>About us </h1>
+
+                        <div class="a-text">
+                            <h2>This site has been created by one person</h2>
+                            <p>
+                                This is site has been created for entertaiment purposes, this page covers basic HTML explanations not the whole tutorial.
+                                Thank you for your spent time reading this website and i would love if you would rate this site on my
+                                <a href="https://github.com/wiktor-ww/learn-webdev" target="_blank" class="link-a">Github</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="a-content-2 reveal" data-anim="fade-right">
+                        <div id="aboutus-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <script type="module" src="/src/main.ts"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>

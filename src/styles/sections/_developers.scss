@@ -1,30 +1,29 @@
 @use '../var/var' as *;
 @use '../var/anim' as *;
 
-
-#welcome {
-    padding-top:100px;
-}
-
-.welcome-content{
+.developers-content{
     border:2px solid green;
     width:100%;
+    height:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.welcome-grid {
+.developers-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 250px;
+    gap: 520px;
+    height:80vh;
     border:2px solid green;
+    justify-items: center;
+    padding-left:150px;
 }
 
-#welcome-img {
+#developers-img {
     height:550px;
-    background-image: url(../../assets/s_welcome/welcome_code1.png);
+    background-image: url(../../assets/s_developers/soft-dev.jpg);
     width:560px;
     box-shadow: inset -100px -120px 40px 0cap $defBg;
     border-radius: 50px;
@@ -36,7 +35,11 @@
     font-size: 18px;
 }
 
-.w-content-1 {
+.d-content-1 {
+    display: flex;
+    flex-direction: column; // elementy jeden pod drugim
+    gap:50px;
+
     h1 {
         font-size: 40px;
     }
@@ -45,21 +48,32 @@
         font-family:monospace;
         font-size: 20px;
     }
+
+    ul {
+        display:flex;
+        flex-direction: column;
+        gap:25px;
+    }
+
+    li {
+        font-family:monospace;
+        font-size: 20px;
+    }
+
     .btn {
         &:active {
             transition:0.05s ease;
             transform: scale(0.98);
         }
     }
+}
 
-    #content-1-btn {
-        animation: fade-up 0.5s ease-in-out forwards;
-        animation-delay:1.5s;
-        opacity:0;
-        transition:0.05s ease;
-        width:185px;
-    }
 
-    animation: fade-up 1s ease-in-out forwards;
+.d-content-2 {
+    display: flex;
+    flex-direction: column; // elementy jeden pod drugim
+    justify-content: center; // centruje w pionie (o ile rodzic ma wysokość!)
+    align-items: center;    // centruje w poziomie
+
 
 }

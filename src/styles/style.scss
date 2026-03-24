@@ -1,12 +1,23 @@
 @use 'var/var' as *;
+@use 'var/anim' as *;
 @use 'nav';
 @use 'main';
-@use 'sections/welcome';
 
-#ts{
+/* === sections === */
+@use 'sections/welcome';
+@use 'sections/introduction';
+@use 'sections/developers';
+@use 'sections/aboutus';
+/* === end sections === */
+
+#ts {
     display:flex;
     flex-direction: column;
     gap:50px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,10 +25,18 @@ body {
     background-color: $defBg;
     color: $defText;
     font-family: verdana, sans-serif;
-    scroll-behavior: smooth;
+    overflow-x:hidden;
+
+    p {
+        line-height:1.618;
+    }
 }
 
 ::selection {
     background-color: black;
     color:white;
+}
+
+img {
+    user-select: none;
 }

@@ -1,15 +1,69 @@
-/* === animations === */
+/* === animations config === */
 
 @keyframes zoomin {
     from {
         opacity: 0;
-        transform:scale(0.90);
+        transform: scale(0.90);
     }
     to {
         opacity: 1;
-        transform:scale(1.00);
+        transform: scale(1.00);
     }
 }
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-right {
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-left {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* === end animations config === */
+
+/* === animations === */
+
+.reveal {
+    opacity:0;
+
+    &.fade-down {
+        animation: fade-down 0.5s ease-in-out forwards;
+    }
+
+    &.fade-right {
+        animation: fade-right 0.5s ease-in-out forwards;
+    }
+
+    &.fade-left {
+        animation: fade-left 0.5s ease-in-out forwards;
+    }
+}
+
 
 
 /* === end animations === */
