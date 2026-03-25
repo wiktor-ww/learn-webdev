@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries) => {
           if (animType) target.classList.remove(animType);
       }
     })
-}, { threshold: 0.6 })
+}, { threshold: 0.3 })
 
 const elementsToAnimate = document.querySelectorAll('.reveal');
 elementsToAnimate.forEach((el) => observer.observe(el));
@@ -36,6 +36,6 @@ function typeWriter(text: string, element: HTMLElement, speed = 50) {
 }
 
 const el1 = document.getElementById("webDev")!;
-typeWriter("Web Development", el1, 110);
+typeWriter("Web Development", el1, 210);
 
 /* end typewriter */

@@ -7,7 +7,6 @@
 }
 
 .welcome-content{
-    border:2px solid green;
     width:100%;
     display:flex;
     flex-direction: column;
@@ -19,7 +18,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 250px;
-    border:2px solid green;
 }
 
 #welcome-img {

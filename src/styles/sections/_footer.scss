@@ -1,31 +1,25 @@
 @use '../var/var' as *;
 @use '../var/anim' as *;
 
-.developers-content{
+.footer-content{
     width:100%;
-    height:100%;
+    height:10%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.developers-grid {
-    display: grid;
+.footer-grid {
+    display: flex;
     grid-template-columns: 1fr 1fr;
-    gap: 520px;
-    height:80vh;
-    justify-items: center;
-    padding-left:150px;
-}
-
-#developers-img {
-    height:550px;
-    background-image: url(../../assets/s_developers/soft-dev.jpg);
-    width:560px;
-    box-shadow: inset -100px -120px 40px 0cap $defBg;
-    border-radius: 50px;
-    animation: zoomin 3s ease forwards;
+    height:10vh;
+    padding-top:20px;
+    border-top:2px black solid;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #codes {
@@ -33,10 +27,9 @@
     font-size: 18px;
 }
 
-.d-content-1 {
+.f-content-1 {
     display: flex;
     flex-direction: column; // elementy jeden pod drugim
-    gap:50px;
 
     h1 {
         font-size: 40px;
@@ -63,15 +56,16 @@
             transition:0.05s ease;
             transform: scale(0.98);
         }
+
     }
 }
 
+.link-a {
+    transition:all 0.3s ease;
+    text-decoration: underline;
 
-.d-content-2 {
-    display: flex;
-    flex-direction: column; // elementy jeden pod drugim
-    justify-content: center; // centruje w pionie (o ile rodzic ma wysokość!)
-    align-items: center;    // centruje w poziomie
-
-
+    &:hover {
+        color:mediumslateblue;
+        text-decoration: underline;
+    }
 }
