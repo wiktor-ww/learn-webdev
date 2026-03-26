@@ -8,7 +8,7 @@ A simple example website that uses basic HTML and SCSS. It includes short explan
 
 * **Frontend:** HTML5, CSS3, TypeScript 6.0, SCSS
 * **Animations:** Intersection Observer
-* **Deployment:** [Github](https://wiktor-ww.github.io/learn-webdev/)
+* **Deployment:** [Github](https://wiktor-ww.github.io/learn-webdev/) 
 
 ---
 
@@ -48,6 +48,8 @@ A simple example website that uses basic HTML and SCSS. It includes short explan
 
    Simply open project in code editor.
 
-## 🔗 Live Demo
+---
 
-[Github](https://github.com/wiktor-ww/learn-webdev/)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fwiktor-ww.github.io%2Flearn-webdev%2F&up_message=online&up_color=black&down_message=offline&down_color=red&style=flat&labelColor=white)
+![Website](https://img.shields.io/badge/VISIT-logo?style=flat&logo=github&logoColor=black&labelColor=white&color=white&link=https%3A%2F%2Fwiktor-ww.github.io%2Flearn-webdev%2F)
+
