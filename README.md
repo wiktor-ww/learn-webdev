@@ -24,8 +24,6 @@ A simple example website that uses basic HTML and SCSS. It includes short explan
 │   └── main.ts           # Scripts
 │
 ├── index.html            # Main HTML file
-├── assets/               # Images and icons
-│   └── ...
 └── README.md             # This file
 ```
 
@@ -38,6 +36,7 @@ A simple example website that uses basic HTML and SCSS. It includes short explan
     ```bash
     git clone https://github.com/wiktor-ww/learn-webdev/
     cd learn-webdev
+    npm install
     ```
 
 2. **Modify Information**
@@ -47,6 +46,12 @@ A simple example website that uses basic HTML and SCSS. It includes short explan
 3. **Open the project**
 
    Simply open project in code editor.
+
+4. **Run the website**
+
+    ```bash
+    npm run dev
+    ```
 
 ---
 
