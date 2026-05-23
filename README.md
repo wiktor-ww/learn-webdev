@@ -1,13 +1,12 @@
 <h1 align="center"> Learn Webdev </h1>
 
-A simple example website that uses basic HTML and SCSS. It includes short explanations of core web development concepts and the main roles developers play in a typical project workflow.
+A simple example website that uses basic HTML and SCSS.
 
 ---
 
 ## 💫 Technologies used
 
 * **Frontend:** HTML5, CSS3, TypeScript 6.0, SCSS
-* **Animations:** Intersection Observer
 * **Deployment:** [Github](https://wiktor-ww.github.io/learn-webdev/) 
 
 ---
@@ -53,8 +52,4 @@ A simple example website that uses basic HTML and SCSS. It includes short explan
     npm run dev
     ```
 
----
-
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fwiktor-ww.github.io%2Flearn-webdev%2F&up_message=online&up_color=black&down_message=offline&down_color=red&style=flat&labelColor=white)
-![Website](https://img.shields.io/badge/VISIT-logo?style=flat&logo=github&logoColor=black&labelColor=white&color=white&link=https%3A%2F%2Fwiktor-ww.github.io%2Flearn-webdev%2F)
 
